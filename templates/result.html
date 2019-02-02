@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Emotion Identifier</title>
+  </head>
+  <body>
+    
+        <h4>Emotion Identifier</h4>
+        
+        {{result.content}}
+        <br>
+
+        {% if result.flag %}
+          <div style="color:green">Positive {{result.sentiment_meter}}</div>
+
+          <img src="static/images/happy.png" height="50px" width="50px" />
+
+        {% else %}          
+
+        <div style="color:red">Negative {{result.sentiment_meter}}</div>
+          <img src="static/images/sad.png" height="50px" width="50px" />
+
+        {% endif %}
+
+
+  </body>
+  </html>
